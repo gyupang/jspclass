@@ -1,4 +1,4 @@
-package common; // 기본 패키지 이외의 패키지(규약 1번)
+package commonch02; // 기본 패키지 이외의 패키지(규약 1번)
 
 //Person DTO 만들기
 public class Person {

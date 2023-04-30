@@ -24,5 +24,21 @@
     <location>/ch01ch02/Exception.jsp</location>
   </error-page> -->
   
-  
+    <!-- SQL 데이터베이스 접속 정보 -->
+  <context-param>
+    <param-name>MySQLDriver</param-name>
+    <param-value>com.mysql.cj.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>MySQLURL</param-name>
+    <param-value>jdbc:mysql://localhost/membertest</param-value>
+  </context-param>
+  <context-param>
+    <param-name>MySQLId</param-name>
+    <param-value>musthave</param-value>
+  </context-param>
+  <context-param>
+    <param-name>MySQLPwd</param-name>
+    <param-value>1234</param-value>
+  </context-param>
 </web-app>

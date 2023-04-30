@@ -15,6 +15,7 @@
   		  String cookieName = c.getName(); 
   		  String cookieValue = c.getValue();
   		  out.println(cookieName + " : " + cookieValue + "<br/>");
+  		  out.println(cookieName + " : " + cookieValue + "<br/>");
   	  }
     }
     
