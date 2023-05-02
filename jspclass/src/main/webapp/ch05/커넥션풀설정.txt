@@ -3,7 +3,6 @@
               driverClassName="com.mysql.cj.jdbc.Driver"
               type="jakarta.sql.DataSource"
               
-              javax.sql.DataSource
               initialSize="0"
               minIdle="5"
               maxTotal="20"

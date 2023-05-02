@@ -42,7 +42,7 @@ public class BoardDAO extends JDBConnect {
 	// 검색 조건에 맞는 게시물 목록을 반환합니다.
 	public List<BoardDTO> selectList(Map<String, Object> map) {
 		List<BoardDTO> bbs = new Vector<BoardDTO>();
-		// 결과(게시물 목록)를 담을 변수
+		// 결과(게시물 목록)를 저장하기 위한 리스트
 
 		String query = "SELECT * FROM board ";
 		if (map.get("searchWord") != null) {
@@ -64,14 +64,14 @@ public class BoardDAO extends JDBConnect {
 				dto.setId(rs.getString("id")); // 작성자 아이디
 				dto.setVisitcount(rs.getString("visitcount")); // 조회수
 
-				bbs.add(dto); // 결과 목록에 저장
+				bbs.add(dto); // 결과 목록에 저장, 게시물의 내용을 list에 저장
 			}
 
 		} catch (Exception e) {
 			System.out.println("게시물 조회 중 예외 발생");
 			e.printStackTrace();
 		}
-		return bbs;
+		return bbs; // 조회된 게시물 목록을 반환
 		
 	}
 
