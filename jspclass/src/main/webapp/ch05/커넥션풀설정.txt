@@ -21,3 +21,10 @@
                   type="jakarta.sql.DataSource"/>
                   
                   javax.sql.DataSource
+
+                  
+                  <!-- server.xml 변경 사항 커넥션풀  -->
+    <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" initialSize="0" maxIdle="20" maxTotal="20" maxWaitMillis="5000" minIdle="5" name="dbcp_mysql" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost/membertest" username="musthave"/>
+                  
+                  <!--  content.xml 변경 사항 -->
+	<ResourceLink global="dbcp_mysql" name="dbcp_mysql" type="javax.sql.DataSource"/>

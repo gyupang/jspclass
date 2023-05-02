@@ -33,21 +33,7 @@ String searchWord = request.getParameter("searchWord");
 <body>
 <jsp:include page="../Link.jsp"/>
     <h2>목록 보기(List)</h2>
-    <!-- 검색폼 --> 
-    <form method="get">  
-    <table border="1" width="90%">
-    <tr>
-        <td align="center">
-            <select name="searchField"> 
-                <option value="title">제목</option> 
-                <option value="content">내용</option>
-            </select>
-            <input type="text" name="searchWord" />
-            <input type="submit" value="검색하기" />
-        </td>
-    </tr>   
-    </table>
-    </form>
+
     <!-- 게시물 목록 테이블(표) --> 
     <table border="1" width="90%">
         <!-- 각 칼럼의 이름 --> 
@@ -98,5 +84,21 @@ else {
                 </button></td>
         </tr>
     </table>
+    
+        <!-- 검색폼 --> 
+    <form method="get">  
+    <table border="1" width="90%">
+    <tr>
+        <td align="center">
+            <select name="searchField"> 
+                <option value="title">제목</option> 
+                <option value="content">내용</option>
+            </select>
+            <input type="text" name="searchWord" />
+            <input type="submit" value="검색하기" />
+        </td>
+    </tr>   
+    </table>
+    </form>
 </body>
 </html>
